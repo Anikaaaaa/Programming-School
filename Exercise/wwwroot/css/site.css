@@ -1,0 +1,129 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.header {
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: space-around;
+}
+
+.header > div{
+   margin: 10px;
+}
+
+#header-text{
+   text-align:center;
+   color:darkblue;
+}
+
+.menu-bar{
+   background-color:darkblue;
+   text-align:center;
+}
+
+   .menu-bar ul {
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-around;
+      list-style: none;
+      color: white;
+   }
+
+.menu-bar ul li{
+   margin: 4px;
+   min-width: 80px;
+   padding: 7px;
+}
+
+      .menu-bar ul li a {
+         text-decoration: none;
+         color: white;
+      }
+
+.active-link, .menu-bar ul li:hover {
+   background-color: mediumblue;
+   border-radius: 3px;
+}
+
+.body-layout {
+   display: flex;
+   flex-flow: wrap row;
+   justify-content:space-evenly;
+}
+
+.content-table{
+   width:18%;
+}
+
+.content-body{
+   width:65%;
+}
+
+.advertisement{
+   width:14%;
+}
+
+.my-custom-scrollbar {
+   position: relative;
+   height: 420px;
+   overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+   display: block;
+}
+
+.card-container {
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: space-evenly;
+   min-height:600px;
+}
+
+   .card-container > div {
+      padding-top: 60px;
+      margin: 10px;
+      width: 180px;
+      height: 280px;
+      border-radius: 10px;
+      border-block-width: 2px;
+   }
+
+.card-container > div:hover {
+   width: 181px;
+   height: 281px;
+   margin: 9px; 
+   
+}
+
+.red-brown{
+   color:firebrick;
+}
+
+.red{
+   color:red;
+}
+
+.blue{
+   color:mediumblue;
+}
+
+.tabs {
+   margin-left: 2em;
+}

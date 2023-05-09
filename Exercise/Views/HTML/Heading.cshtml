@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="body-layout">
+    @{
+        await Html.RenderPartialAsync("_HTMLContents");
+    }
+
+   <div class="content-body m-2 ms-3">
+      <h3>HTML Headings</h3>
+      <div>
+         <p>HTML Headings are used to display titles and subtitles of a document. Content of the heading tags are displayed in bold format. Size of the content of heading tags
+            depends on the number of the heading.
+         </p>
+         <p>
+            There are six different headings. They are 
+            <span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span> 
+            <span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span>,
+            <span class="blue"><</span><span class="red-brown">h2</span><span class="blue">></span>
+            <span class="blue"><</span><span class="red-brown">h2</span><span class="blue">></span>, 
+            <span class="blue"><</span><span class="red-brown">h3</span><span class="blue">></span>
+            <span class="blue"><</span><span class="red-brown">h3</span><span class="blue">></span>, 
+            <span class="blue"><</span><span class="red-brown">h4</span><span class="blue">></span>
+            <span class="blue"><</span><span class="red-brown">h4</span><span class="blue">></span>, 
+            <span class="blue"><</span><span class="red-brown">h5</span><span class="blue">></span>
+            <span class="blue"><</span><span class="red-brown">h5</span><span class="blue">></span>, 
+            <span class="blue"><</span><span class="red-brown">h6</span><span class="blue">></span>
+            <span class="blue"><</span><span class="red-brown">h6</span><span class="blue">></span>, 
+         </p>
+      </div>
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Example</h4></div>
+         <div class="card-body">
+             <span class="blue"><</span><span class="red-brown">!DOCTYPE</span> <span class="red">html</span><span class="blue">></span>
+            <br />
+            <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span>
+            <br />
+            <br>
+            &emsp;<span class="blue"><</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span>
+            <span>I am heading h1.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h1</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">h2</span><span class="blue">></span>
+            <span>I am heading h2.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h2</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">h3</span><span class="blue">></span>
+            <span>I am heading h3.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h3</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">h4</span><span class="blue">></span>
+            <span>I am heading h4.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h4</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">h5</span><span class="blue">></span>
+            <span>I am heading h5.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h5</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">h6</span><span class="blue">></span>
+            <span>I am heading h6.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h6</span><span class="blue">></span>
+            <br />
+            &emsp;<span class="blue"><</span><span class="blue">/</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            <br />
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">html</span><span class="blue">></span>
+         </div>
+      </div>
+
+       <div class="card mt-3">
+         <div class="card-header"> <h4>Output of the example</h4></div>
+         <div class="card-body">
+            <h1>I am heading h1.</h1>
+            <h2>I am heading h2.</h2>
+            <h3>I am heading h3.</h3>
+            <h4>I am heading h4.</h4>
+            <h5>I am heading h5.</h5>
+            <h6>I am heading h6.</h6>
+            </div>
+            </div>
+
+      <div class="mt-4 alert alert-info">
+         As we can see <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h1</span><span class="blue">></span>
+         is the leargest heading and <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h6</span><span class="blue">></span>
+         is the smallest and the rest of the headings also follow this sequence. So <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h1</span><span class="blue">></span>
+         is used for the most important heading and <span class="blue"><</span><span class="blue">/</span><span class="red-brown">h6</span><span class="blue">></span> is 
+         used fore the least important one.
+      </div>
+
+      <div class="mt-4 alert alert-danger">
+         Search engines use headings for indxing the content and structure of web page. So HTML headings should only be used for headings not to make text big or bold.
+      </div>
+      <div class="row ">
+         <div class="col-6">
+         <a asp-action="Elements" class="btn btn-outline-info btn-sm mt-2 float-start"><i class="fa fa-arrow-left me-1"></i>Previous</a>
+         </div>
+         <div class="col-6">
+         <a asp-action="Paragraph" class="btn btn-outline-info btn-sm mt-2 float-end">Next <i class="fa fa-arrow-right"></i></a>
+         </div>
+         </div>
+   </div>
+   <div class="advertisement">
+      <div class="mt-4 alert alert-danger">
+         This space is for showing advertisements.
+      </div>
+   </div>
+</div>

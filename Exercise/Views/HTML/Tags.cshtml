@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="body-layout">
+    @{
+        await Html.RenderPartialAsync("_HTMLContents");
+    }
+
+   <div class="content-body m-2 ms-3">
+      <h3>HTML Tags</h3>
+      <div>
+         <p>HTML Tag is a markup language which indicates the begining and ending of HTML element.</p>
+      </div>
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Example</h4></div>
+         <div class="card-body">
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <td>
+                        <span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span> is the staring tag of a paragraph and
+                        <span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+                        is the closing tag of a paragraph.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span> is the staring tag of a heading and
+                        <span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span>
+                        is the closing tag of a heading.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">br</span><span class="blue">></span> is the tag for line break.</td>
+                  </tr>
+            </table>
+         </div>
+        </div>
+      <div class="mt-5 alert alert-info">
+         HTML tags are not case sensitive. <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span> and <span class="blue"><</span><span class="red-brown">HTML</span><span class="blue">></span>
+         means the same.
+      </div>
+     
+         
+      <div class="row ">
+         <div class="col-6">
+         <a asp-action="Introduction" class="btn btn-outline-info btn-sm mt-2 float-start"><i class="fa fa-arrow-left me-1"></i>Previous</a>
+         </div>
+         <div class="col-6">
+         <a asp-action="Elements" class="btn btn-outline-info btn-sm mt-2 float-end">Next <i class="fa fa-arrow-right"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="advertisement">
+   </div>
+</div>

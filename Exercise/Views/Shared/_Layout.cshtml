@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>@ViewData["Title"] - Exercise</title>
+   <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+   <link rel="stylesheet" href="~/Exercise.styles.css" asp-append-version="true" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <header>
+      <div class="header mt-2">
+         <div>
+            <i class="fa fa-code fa-3x" style="color:darkblue"></i>
+         </div>
+         <div>
+            <h2 id="header-text">Programming School</h2>
+         </div>
+         <div>
+            <div class="form-check form-switch">
+               <input class="form-check-input" style="background-color:darkblue;border:none;" type="checkbox" id="language" checked>
+               <label class="form-check-label" for="language">Bangla</label>
+            </div>
+         </div>
+      </div>
+
+      <div class="menu-bar">
+         <ul>
+            <li>
+               <a asp-controller="Home" asp-action="Index"> <i class="fa fa-home" style="font-size:20px;"></i></a>
+            </li>
+            <li>
+               <a asp-controller="Home" asp-action="Index"> HTML</a>
+            </li>
+            <li>
+               <a href="#"> CSS</a>
+            </li>
+            <li>
+               <a href="#"> JavaScript</a>
+            </li>
+            <li>
+               <a href="#"> Bootstrap</a>
+            </li>
+            <li>
+               <a href="#"> C#</a>
+            </li>
+            <li>
+               <a href="#"> Asp .net</a>
+            </li>
+            <li>
+               <a href="#"> Entity FrameWork</a>
+            </li>
+            <li>
+               <a href="#"> SQL</a>
+            </li>
+         </ul>
+      </div>
+   </header>
+   <div style="margin-left:2px;margin-right:2px">
+      <main role="main" class="pb-3">
+            @RenderBody()
+      </main>
+   </div>
+
+   <footer class="border-top footer text-muted">
+      <div>
+         &copy; 2023 - Exercise - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+      </div>
+   </footer>
+   <script src="~/lib/jquery/dist/jquery.min.js"></script>
+   <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

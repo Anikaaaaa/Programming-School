@@ -1,0 +1,152 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="body-layout">
+    @{
+        await Html.RenderPartialAsync("_HTMLContents");
+    }
+
+   <div class="content-body m-2 ms-3">
+      <h3>HTML Elements</h3>
+      <div>
+         <p>An HTML element is defined by a start tag, it's contents and an end tag. Some elements has no end tag. An HTML element with no content is called <b>Empty Element</b>. Empty elements have no closing or end tag.</p>
+         <p>In closing tag element name is preceded by a forward slash. </p>
+      </div> 
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Some HTML Elemnts</h4></div>
+         <div class="card-body">
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <th class="col-3">Start Tag</th>
+                     <th class="col-6">Content</th>
+                     <th class="col-3">End Tag</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span></td>
+                     <td>I'm content of a paragraph.</td>
+                     <td><span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span></td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span></td>
+                     <td>I'm a heading content.</td>
+                     <td><span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span></td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">h2</span><span class="blue">></span></td>
+                     <td>I'm another heading content.</td>
+                     <td><span class="blue"><</span><span class="red-brown">h2</span><span class="blue">></span></td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">div</span><span class="blue">></span></td>
+                     <td>I'm a division content.</td>
+                     <td><span class="blue"><</span><span class="red-brown">div</span><span class="blue">></span></td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">span</span><span class="blue">></span></td>
+                     <td>I'm a span content.</td>
+                     <td><span class="blue"><</span><span class="red-brown">span</span><span class="blue">></span></td>
+                  </tr>
+               </tbody>
+            </table>
+            <p class="alert alert-info mt-2">No worries if you don't know what does they mean. We gonna know about them in our next lessons.</p>
+         </div>
+      </div>
+
+       <h3 class="mt-5">Nested HTML Elements</h3>
+      <div>
+         <p>HTML elements can contain other HTML elements. This is nesting of HTML element. For doing nesting entire HTML element(start tag, content, end tag) must be withing the start tag and end tag of the containing element.</p>
+      </div> 
+
+      <div class="card mt-3">
+         <div class="card-header">
+            <h4>Example</h4>
+         </div>
+         <div class="card-body">
+            <span class="blue"><</span><span class="red-brown">!DOCTYPE</span> <span class="red">html</span><span class="blue">></span>
+            <br />
+            <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span>
+            <br />
+            &emsp;<span class="blue"><</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>This is an example of nested HTML element.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            <br />
+            &emsp;<span class="blue"><</span><span class="blue">/</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            <br />
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">html</span><span class="blue">></span>
+         </div>
+      </div>
+
+      <h3 class="mt-5">Empty HTML Elements</h3>
+      <div>
+         <p>An empty HTML element doesn't have any content and closing tag. So obviousy an empty HTML element can not have other element inside it.</p>
+      </div>
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Some Empty HTML Elemnts</h4></div>
+         <div class="card-body">
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <th class="col-3">Start Tag</th>
+                     <th class="col-6">Content</th>
+                     <th class="col-3">End Tag</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">br</span><span class="blue">></span></td>
+                     <td>None</td>
+                     <td>None</td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">hr</span><span class="blue">></span></td>
+                     <td>None</td>
+                     <td>None</td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">img</span><span class="blue">></span></td>
+                     <td>None</td>
+                     <td>None</td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">input</span><span class="blue">></span></td>
+                     <td>None</td>
+                     <td>None</td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">link</span><span class="blue">></span></td>
+                     <td>None</td>
+                     <td>None</td>
+                  </tr>
+                  <tr>
+                     <td><span class="blue"><</span><span class="red-brown">meta</span><span class="blue">></span></td>
+                     <td>None</td>
+                     <td>None</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+      <div class="row ">
+         <div class="col-6">
+            <a asp-action="Tags" class="btn btn-outline-info btn-sm mt-2 float-start"><i class="fa fa-arrow-left me-1"></i>Previous</a>
+         </div>
+         <div class="col-6">
+            <a asp-action="Heading" class="btn btn-outline-info btn-sm mt-2 float-end">Next <i class="fa fa-arrow-right"></i></a>
+         </div>
+        </div>
+
+   </div>
+   <div class="advertisement">
+   </div>
+</div>

@@ -1,0 +1,126 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="body-layout">
+    @{
+        await Html.RenderPartialAsync("_HTMLContents");
+    }
+
+   <div class="content-body m-2 ms-3">
+      <h3>HTML Paragraph</h3>
+      <div>
+         <p>HTML Paragraph is used to display a section block of text. Content of paragraph tag is displayed in a new block. Browser adds a new line before and after a paragraph.
+            Some margine is also added on the top and bottom of a paragraph. HTML paragraph is defined by
+             <span class="blue"><</span><span class="blue"></span><span class="red-brown">p</span><span class="blue">></span> <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span> element.   
+         </p>
+      </div>
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Example</h4></div>
+         <div class="card-body">
+            <span class="blue"><</span><span class="red-brown">!DOCTYPE</span> <span class="red">html</span><span class="blue">></span>
+            <br />
+            <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span>
+            <br />
+            <br>
+            &emsp;<span class="blue"><</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>I am a paragraph.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>I am another paragraph.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            <br />
+            <div class="tabs">
+            <span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>I am also a paragraph with some dummy text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            </div>
+            &emsp;<span class="blue"><</span><span class="blue">/</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            <br />
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">html</span><span class="blue">></span>
+         </div>
+      </div>
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Output of the example</h4></div>
+         <div class="card-body">
+            <p>I am a paragraph.</p>
+            <p>I am another paragraph.</p>
+            <p>I am also a paragraph with some dummy text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+         </div>
+      </div>
+
+      <h3 class="mt-5">HTML Line Break</h3>
+      <p>
+      <span class="blue"><</span><span class="red-brown">br</span><span class="blue">></span> is line break element. Browsers add a new line where it finds <span class="blue"><</span><span class="red-brown">h1</span><span class="blue">></span> in the document.
+      <span class="blue"><</span><span class="red-brown">br</span><span class="blue">></span> is used when we want to write some text in a new line without starting a new paragraph.
+      <br>
+      As we can see <span class="blue"><</span><span class="red-brown">br</span><span class="blue">></span> is a empty element.
+      </p>
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Example</h4></div>
+         <div class="card-body">
+            <span class="blue"><</span><span class="red-brown">!DOCTYPE</span> <span class="red">html</span><span class="blue">></span>
+            <br />
+            <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span>
+            <br />
+            <br>
+            &emsp;<span class="blue"><</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>I am a paragraph.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>I am another paragraph.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            <br />
+            <div class="tabs">
+               <span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+               <span>I am also a paragraph with some dummy text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+               <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            </div>
+            &emsp;&emsp;I am not a paragraph. I am just a line after paragraph.
+            <span class="blue"><</span><span class="red-brown">br</span><span class="blue">></span>
+            I am a line after line break.
+            <br>
+            &emsp;<span class="blue"><</span><span class="blue">/</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            <br />
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">html</span><span class="blue">></span>
+         </div>
+      </div>
+
+      <div class="card mt-3">
+         <div class="card-header"> <h4>Output of the example</h4></div>
+         <div class="card-body">
+            <p> I am a paragraph. </p>
+            <p> I am another paragraph. </p>
+            <p> I am also a paragraph with some dummy text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            I am not a paragraph. I am just a line after paragraph. <br> I am a line after line break.
+         </div>
+         </div>
+
+      <div class="mt-4 alert alert-warning">
+         As you can see in the output, margin is added before and after a paragraph.
+      </div>
+
+      <div class="row ">
+         <div class="col-6">
+            <a asp-action="Heading" class="btn btn-outline-info btn-sm mt-2 float-start"><i class="fa fa-arrow-left me-1"></i>Previous</a>
+         </div>
+         <div class="col-6">
+            <a asp-action="" class="btn btn-outline-info btn-sm mt-2 float-end">Next <i class="fa fa-arrow-right"></i></a>
+         </div>
+      </div>
+   </div>
+   <div class="advertisement">
+   </div>
+</div>

@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section scripts{
+    <script>
+       $(document).ready(function () {
+           $('header').empty();
+           $('footer').empty();
+       });
+    </script>
+
+}
+
+<div class="header mt-2">
+   <div>
+      <i class="fa fa-code fa-3x" style="color:darkblue"></i>
+   </div>
+   <div>
+      <h2 id="header-text">Programming School</h2>
+   </div>
+   <div>
+      <div class="form-check form-switch">
+         <input class="form-check-input" style="background-color:darkblue;border:none" type="checkbox" id="flexSwitchCheckChecked" checked>
+         <label class="form-check-label" for="flexSwitchCheckChecked">Bangla</label>
+      </div>
+   </div>
+</div>
+
+<div class="card-container mt-5">
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa-brands fa-html5 mb-3 text-warning" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            HTML
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn HTML</div>
+         <div class="mt-3"> <a asp-controller="HTML" asp-action="Introduction"><i class="text-black-50 fa fa-arrow-right"></i></a></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa-brands fa-css3-alt mb-3 text-danger" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            CSS
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn CSS</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fab fa-js mb-3 text-info" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            JavaScript
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn JavaScript</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa-brands fa-bootstrap mb-3 text-primary" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            Bootstrap
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn Bootstrap</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa-brands fa-hashtag mb-3 text-success" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            C#
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn C#</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa fa-code mb-3 text-warning" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            Asp .Net
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn Asp .Net</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa fa-code mb-3 text-danger" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            Entity FrameWork
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn Entity FrameWork</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-body card-style text-center">
+         <i class="fa fa-code mb-3 text-info" style="font-size:25px"></i>
+         <h5 style="font-family:'Comic Sans MS'">
+            SQL
+         </h5>
+         <div class="text-black-50" style="font-family:'Comic Sans MS';font-size:small">Learn SQL</div>
+         <div class="mt-3"><i class="text-black-50 fa fa-arrow-right"></i></div>
+      </div>
+   </div>
+
+
+</div>

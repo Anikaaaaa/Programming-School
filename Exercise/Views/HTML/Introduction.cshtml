@@ -1,0 +1,99 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="body-layout">
+   @{
+        await Html.RenderPartialAsync("_HTMLContents");
+   }
+
+   <div class="content-body m-2 ms-3">
+      <h3>What is HTML</h3>
+      <div>
+         HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML is the most widely used language on web to develop web pages. HTML describes the structure of a Web page.
+         HTML consists of a series of elements. Web browsers uses HTML tags to determine how to display HTML document.
+      </div>
+      <div class="card mt-5">
+         <div class="card-header">
+            <div class="row">
+            <h4 class="col-10">Basic HTML Document Structure</h4>
+            <a asp-action="OnlineEditor" class="btn btn-outline-info btn-sm me-auto col-2">Try Yourself</a>
+            </div>
+         </div>
+         <div class="card-body">
+            <span class="blue"><</span><span class="red-brown">!DOCTYPE</span> <span class="red">html</span><span class="blue">></span>
+            <br />
+            <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span>
+            <br />
+            <br />
+            &emsp;<span class="blue"><</span><span class="red-brown">head</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">title</span><span class="blue">></span>
+            <span>This is the title of the page.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">title</span><span class="blue">></span>
+            <br />
+            &emsp;<span class="blue"><</span><span class="blue">/</span><span class="red-brown">head</span><span class="blue">></span>
+            <br />
+            <br />
+            &emsp;<span class="blue"><</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            &emsp;&emsp;<span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span>
+            <span>This is a paragraph inside body section.</span>
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">p</span><span class="blue">></span>
+            <br />
+            &emsp;<span class="blue"><</span><span class="blue">/</span><span class="red-brown">body</span><span class="blue">></span>
+            <br />
+            <br />
+            <span class="blue"><</span><span class="blue">/</span><span class="red-brown">html</span><span class="blue">></span>
+         </div>
+      </div>
+
+      <div class="card mt-5">
+         <div class="card-header"> <h4>Explanation of above example</h4></div>
+         <div class="card-body">
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <th class="col-3">Tags</th>
+                     <th class="col-9">Explanation</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td class="col-3"><span class="blue"><</span><span class="red-brown">!DOCTYPE</span> <span class="red">html</span><span class="blue">></span></td>
+                     <td class="col-9">Defines HTML5 is used in this document</td>
+                  </tr>
+                  <tr>
+                     <td class="col-3"><span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span></td>
+                     <td class="col-9">
+                        The text between
+                        <span class="blue"><</span><span class="red-brown">html</span><span class="blue">></span>
+                        and
+                        <span class="blue"><</span><span class="blue">/</span><span class="red-brown">html</span><span class="blue">></span>
+                        describes the web page. This tag encloses the complete HTML document. Header and body section is inside this tag.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="col-3"><span class="blue"><</span><span class="red-brown">title</span><span class="blue">></span></td>
+                     <td class="col-9">The text between this tag defines the browser page title shown on browser tabs and window titles.</td>
+                  </tr>
+                  <tr>
+                     <td class="col-3"><span class="blue"><</span><span class="red-brown">body</span><span class="blue">></span></td>
+                     <td class="col-9">The text between this tag is the visible page content.</td>
+                  </tr>
+                  <tr>
+                     <td class="col-3"><span class="blue"><</span><span class="red-brown">p</span><span class="blue">></span></td>
+                     <td class="col-9">
+                        This tag represents a paragraph.
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <a asp-action="Tags" class="btn btn-outline-info btn-sm mt-2 col-2 float-end">Next <i class="fa fa-arrow-right"></i></a>
+   </div>
+   <div class="advertisement">
+   </div>
+</div>
